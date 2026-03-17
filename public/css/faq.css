@@ -1,0 +1,51 @@
+/* FAQ Page Styles */
+.faq-section {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    border-color: rgba(6, 111, 209, 0.1);
+}
+
+.faq-question {
+    font-size: 1.25rem;
+    /* Approx 20px */
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #1a1b26;
+    /* Fallback or match --text-main */
+    line-height: 1.4;
+}
+
+.faq-answer {
+    color: #64748b;
+    /* Fallback or match --text-muted */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Ensure paragraph margins are handled */
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}

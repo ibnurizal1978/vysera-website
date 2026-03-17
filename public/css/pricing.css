@@ -1,0 +1,163 @@
+/* Pricing Page Specific Styles */
+
+.pricing-page-header {
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.pricing-page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.pricing-page-header .hero-sub {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem 8rem;
+}
+
+/* Two Column Grid for Free and Pro */
+.pricing-plans-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.pricing-plan-card {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+    padding: 3rem 2.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-plan-card.pro-plan {
+    border: 2px solid var(--primary);
+    box-shadow: 0 10px 30px rgba(6, 111, 209, 0.1);
+}
+
+.most-popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.plan-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.plan-price {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.plan-price span {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.plan-description {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: 2.5rem;
+    flex-grow: 1;
+}
+
+.plan-features li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-main);
+    font-size: 0.95rem;
+}
+
+.plan-features li i,
+.plan-features li svg {
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.plan-features li.disabled {
+    color: #cbd5e1;
+    text-decoration: line-through;
+}
+
+.plan-features li.disabled i {
+    color: #cbd5e1;
+}
+
+/* Custom Plan Section */
+.custom-plan-section {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 24px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.custom-plan-content h3 {
+    color: white;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.custom-plan-content p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pricing-plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-plan-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+}

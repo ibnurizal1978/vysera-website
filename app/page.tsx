@@ -1,65 +1,108 @@
-import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Vysera",
+  description: "Vysera Employee Certification Tracking Software",
+  alternates: {
+    canonical: "https://getvysera.com",
+  },
+}
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="">
+      <header className="hero">
+        <div className="container hero-container">
+          <div className="hero-content">
+            <div className="badge">Compliance & Audit Readiness</div>
+            <h1>Employee Certification Tracking Software<br />
+            </h1>
+            <p className="hero-sub">
+              Vysera automates the monitoring of employee credentials, training certificates, licenses, work permits, and work contracts expiration dates. Stay audit-ready and eliminate the risk of expired certifications across your entire workforce.
+            </p>
+            <div className="hero-btns">
+              <a href="https://apps.getvysera.com/signup" className="btn btn-primary btn-lg">Start Free Trial</a>
+              <a href="https://www.youtube.com/@getvysera" target="_blank" className="btn btn-secondary btn-lg">View
+                Demo</a>
+            </div>
+          </div>
+          <div className="hero-visual">
+            <div className="glass-card hero-card">
+              <img src="/img/calendar.png" alt="Renewal Calendar" className="floating" />
+              <div className="glass-card mini-card card-1">
+                <div className="icon">🔔</div>
+                <div className="text">
+                  <strong>Renewal Alert</strong>
+                  <span>John Doe's HSE Level 2 Certificateis due in 15 days</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </header>
+
+      <section id="features" className="features">
+        <div className="container">
+          <div className="section-header">
+            <h2>Everything you need to <span className="gradient-text">track an employee certification expiration date</span></h2>
+            <p>Powerful features designed to give you complete visibility over your employee certification and renewal process lifecycle.</p>
+          </div>
+
+          <div className="feature-grid">
+            <div className="feature-card">
+              <div className="feature-icon-wrapper">
+                <img src="/img/1.webp" alt="Tiered Reminders" className="feature-icon" />
+              </div>
+              <h3>Smart Reminders</h3>
+              <p>With Smart Reminders, you can configure alerts at any number of days before an item expires. This
+                ensures your team has ample time to renegotiate terms and preparing a new contract.</p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon-wrapper">
+                <img src="/img/2.webp" alt="Email Integration" className="feature-icon" />
+              </div>
+              <h3>Multiple Reminder Items</h3>
+              <p>Set a multiple reminder items for each employee. From work contracts, training certificates, licenses, and more.</p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon-wrapper">
+                <img src="/img/3.webp" alt="Team Access" className="feature-icon" />
+              </div>
+              <h3>Team Collaboration</h3>
+              <p>Assign owners to specific assets and manage application access with multi-user access controls.</p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon-wrapper">
+                <img src="/img/4.webp" alt="Asset Management" className="feature-icon" />
+              </div>
+              <h3>Credential Tracking</h3>
+              <p>Keep track of all your employee credentials, training certificates, licenses, and more.</p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon-wrapper">
+                <img src="/img/5.webp" alt="Asset Management" className="feature-icon" />
+              </div>
+              <h3>Notification to Email</h3>
+              <p>Vysera will send a notification to your email when the reminder is due based on the reminder period
+                you set.</p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon-wrapper">
+                <img src="/img/6.webp" alt="Asset Management" className="feature-icon" />
+              </div>
+              <h3>Multi-Receivers</h3>
+              <p>Set a multiple receiver for each reminder item. You can set a multiple receiver for each reminder
+                item.</p>
+            </div>
+
+          </div>
         </div>
-      </main>
+      </section>
     </div>
   );
 }
