@@ -27,7 +27,7 @@ export default function Pricing() {
                     <div className="pricing-plan-card">
                         <div className="most-popular-badge">Most Popular</div>
                         <div className="plan-name">Built-in</div>
-                        <div className="plan-price">$1.99<span>/user/mo</span></div>
+                        <div className="plan-price">$2.99<span>/user/mo</span></div>
                         <p className="plan-description">Perfect for tracking employee credentials, training certificates, licenses, and more.</p>
 
                         <ul className="plan-features">
