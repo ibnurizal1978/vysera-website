@@ -82,7 +82,7 @@ export default function Pricing() {
                             </li>
                         </ul>
 
-                        <a href="https://apps.getvysera.com/signup?p11567" className="btn btn-primary btn-full">Start 14-dayFree Trial</a>
+                        <a href="https://apps.getvysera.com/signup?p11567" className="btn btn-primary btn-full">Start 14-day Free Trial</a>
                         <br /><small className="text-secondary">No credit card required during trial.</small>
                     </div>
 
