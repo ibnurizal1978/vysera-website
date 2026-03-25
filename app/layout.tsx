@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./globals.css";
-import { title } from "process";
+
 import { GoogleAnalytics } from '@next/third-parties/google'
 import Script from "next/script";
 
@@ -32,7 +32,7 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{title}</title>
+        {/* Title is handled by Next.js metadata export */}
         <meta name="description"
           content="Ensure enterprise compliance with Vysera. Automate employee contract renewals, credentials, training and license certificate expirations to mitigate legal risks, avoid costly penalties, and maintain audit-ready documentation in one secure platform." />
         <meta name="keywords"
@@ -49,13 +49,13 @@ export default function RootLayout({
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://getvysera.com/" />
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content="Employee Certification Tracking Software" />
         <meta property="og:description"
           content="Ensure enterprise compliance with Vysera. Automate employee contract renewals, credentials, training and license certificate expirations to mitigate legal risks, avoid costly penalties, and maintain audit-ready documentation in one secure platform." />
         <meta property="og:image" content="/img/getvysera.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content={title} />
+        <meta property="twitter:title" content="Employee Certification Tracking Software" />
         <meta property="twitter:description"
           content="Ensure enterprise compliance with Vysera. Automate employee contract renewals, credentials, training and license certificate expirations to mitigate legal risks, avoid costly penalties, and maintain audit-ready documentation in one secure platform." />
         <meta property="twitter:image" content="/img/getvysera.png" />
