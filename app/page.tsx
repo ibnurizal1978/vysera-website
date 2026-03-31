@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Vysera",
+  title: "Vysera - Employee Certification Tracking & Compliance Management Software",
   description: "Vysera Employee Certification Tracking Software",
   alternates: {
     canonical: "https://getvysera.com",
