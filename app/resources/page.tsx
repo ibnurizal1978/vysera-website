@@ -29,6 +29,11 @@ export default function Resources() {
                             <p><Link href="/resources/the-invisible-cost-of-forgotten-contracts-why-manual-tracking-is-killing-your-roi">The Invisible Cost of Forgotten Contracts: Why Manual Tracking is Killing Your ROI</Link></p>
                         </div>
                     </div>
+                    <div className="faq-item">
+                        <div className="faq-answer">
+                            <p><Link href="/resources/the-ultimate-guide-to-product-features-use-cases-for-hr-and-compliance-professionals">The Ultimate Guide to Product Features & Use Cases for HR and Compliance Professionals</Link></p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
