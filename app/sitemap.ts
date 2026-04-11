@@ -29,6 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
+            url: 'https://getvysera.com/resources',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
             url: 'https://getvysera.com/contact',
             lastModified: new Date(),
             changeFrequency: 'monthly',

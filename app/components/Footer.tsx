@@ -17,14 +17,13 @@ export default function Footer() {
             <footer>
                 <div className="container footer-container">
                     <div className="footer-col">
-                        <a href="#" className="logo">Vysera</a>
+                        <Link href="/" className="logo">Vysera</Link>
                         <p>The employee certification tracking software for modern teams. Manage your employee credentials, training certificates, licenses, and more in one place.</p>
                     </div>
                     <div className="footer-col">
                         <h4>Product</h4>
                         <Link href="/features">Features</Link>
                         <Link href="/pricing">Pricing</Link>
-                        <Link href="#">Integrations</Link>
                     </div>
                     <div className="footer-col">
                         <h4>Company</h4>

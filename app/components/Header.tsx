@@ -6,8 +6,8 @@ export default function Header() {
 
             <nav className="navbar">
                 <div className="container nav-container">
-                    <a href="https://getvysera.com" className="logo"><img src="/img/logo.png" alt="Vysera" className="w-[140px] h-auto"
-                        width="140" /></a>
+                    <Link href="/" className="logo"><img src="/img/logo.png" alt="Vysera" className="w-[140px] h-auto"
+                        width="140" /></Link>
                     <div className="nav-links">
                         <Link href="/features">Features</Link>
                         <Link href="/pricing">Pricing</Link>
