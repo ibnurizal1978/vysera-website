@@ -23,12 +23,82 @@ export default function Pricing() {
 
             <section className="pricing-container">
                 <div className="pricing-plans-grid">
+
                     {/* Free Plan */}
+                    <div className="pricing-plan-card">
+                        <div className="plan-name">Basic</div>
+                        <div className="plan-price">FREE</div>
+                        <p className="plan-description">Perfect for individuals or small teams who need to track employee credentials, training certificates, licenses, and more.</p>
+
+                        <ul className="plan-features">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="18 6 6 18 12 12 6 6 18 18"></polyline>
+                                </svg>
+                                Data Backup
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="18 6 6 18 12 12 6 6 18 18"></polyline>
+                                </svg>
+                                Support Assistance
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Max. 10 Items
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Multiple Reminder Notifications
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Document Upload (Certificates, Work Contract, etc)
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Calendar View
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Dashboard Reporting
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Email Reminder
+                            </li>
+                        </ul>
+
+                        <a href="https://apps.getvysera.com/signup?p1" className="btn btn-primary btn-full">Start Free Now</a>
+                        <br /><small className="text-secondary">&nbsp;</small>
+                    </div>
+
+                    {/* Paid Plan */}
                     <div className="pricing-plan-card">
                         <div className="most-popular-badge">Most Popular</div>
                         <div className="plan-name">Built-in</div>
                         <div className="plan-price">$2.99<span>/user/mo</span></div>
-                        <p className="plan-description">Perfect for tracking employee credentials, training certificates, licenses, and more.</p>
+                        <p className="plan-description">Perfect for organizations who need to track employee credentials, training certificates, licenses, and more</p>
 
                         <ul className="plan-features">
                             <li>
@@ -90,7 +160,7 @@ export default function Pricing() {
                     <div className="pricing-plan-card pro-plan">
                         <div className="plan-name">Custom</div>
                         <div className="plan-price">$Call</div>
-                        <p className="plan-description">For custom requirements.</p>
+                        <p className="plan-description">For custom requirements, with a dedicated server and a primary support.<br /><br /></p>
 
                         <ul className="plan-features">
                             <li>

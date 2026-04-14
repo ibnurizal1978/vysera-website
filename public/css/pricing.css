@@ -1,54 +1,64 @@
-/* Pricing Page Specific Styles */
-
-.pricing-page-header {
-    padding-top: 10rem;
-    padding-bottom: 4rem;
-    text-align: center;
-}
-
-.pricing-page-header h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.pricing-page-header .hero-sub {
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/* Container Utama */
 .pricing-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 2rem 8rem;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-/* Two Column Grid for Free and Pro */
+/* Header Styling */
+.pricing-page-header {
+    text-align: center;
+    padding: 125px 20px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #f0f4ff;
+    color: #3b82f6;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Grid System - Kunci Utama 3 Kolom */
 .pricing-plans-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-bottom: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    /* Membuat 3 kolom sama besar */
+    gap: 30px;
+    align-items: stretch;
 }
 
+/* Card Styling */
 .pricing-plan-card {
-    background: white;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 24px;
-    padding: 3rem 2.5rem;
     position: relative;
+    padding: 40px 30px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
+    /* Membuat isi card vertikal */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pricing-plan-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
-.pricing-plan-card.pro-plan {
-    border: 2px solid var(--primary);
-    box-shadow: 0 10px 30px rgba(6, 111, 209, 0.1);
+/* Highlight untuk Plan Tengah (Most Popular) */
+.pricing-plan-card:nth-child(2) {
+    border: 2px solid #3b82f6;
+    scale: 1.02;
 }
 
 .most-popular-badge {
@@ -56,108 +66,106 @@
     top: -12px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--primary);
+    background: #3b82f6;
     color: white;
-    padding: 0.25rem 1rem;
-    border-radius: 100px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
 }
 
+/* Typography di dalam Card */
 .plan-name {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: var(--text-main);
+    margin-bottom: 8px;
 }
 
 .plan-price {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: var(--text-main);
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: baseline;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
 }
 
 .plan-price span {
     font-size: 1rem;
-    color: var(--text-muted);
-    font-weight: 500;
-    margin-left: 5px;
+    color: #6b7280;
+    font-weight: 400;
 }
 
 .plan-description {
-    color: var(--text-muted);
-    margin-bottom: 2rem;
-    font-size: 1rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    line-height: 1.5;
 }
 
+/* Feature List */
 .plan-features {
     list-style: none;
-    margin-bottom: 2.5rem;
+    padding: 0;
+    margin: 0 0 32px 0;
     flex-grow: 1;
+    /* Mendorong tombol ke bawah jika fitur sedikit */
 }
 
 .plan-features li {
-    margin-bottom: 1rem;
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    color: var(--text-main);
-    font-size: 0.95rem;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    color: #374151;
 }
 
-.plan-features li i,
-.plan-features li svg {
-    color: var(--primary);
+.plan-features svg {
     flex-shrink: 0;
+    margin-top: 2px;
 }
 
-.plan-features li.disabled {
-    color: #cbd5e1;
-    text-decoration: line-through;
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
 }
 
-.plan-features li.disabled i {
-    color: #cbd5e1;
-}
-
-/* Custom Plan Section */
-.custom-plan-section {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    border-radius: 24px;
-    padding: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.btn-primary {
+    background: #3b82f6;
     color: white;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-.custom-plan-content h3 {
-    color: white;
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
+.btn-primary:hover {
+    background: #2563eb;
 }
 
-.custom-plan-content p {
-    color: #94a3b8;
-    font-size: 1.1rem;
-    max-width: 600px;
+.btn-full {
+    display: block;
+    width: 100%;
 }
 
-/* Responsive */
+.hero-sub {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive: 1 Kolom di Layar Kecil */
+@media (max-width: 1024px) {
+    .pricing-plans-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .pricing-plans-grid {
         grid-template-columns: 1fr;
     }
 
-    .custom-plan-section {
-        flex-direction: column;
-        text-align: center;
-        gap: 2rem;
+    .pricing-plan-card:nth-child(2) {
+        scale: 1;
     }
 }
