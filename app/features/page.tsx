@@ -23,8 +23,7 @@ export default function features() {
                             <img src="/img/1.webp" alt="Tiered Reminders" className="feature-icon" />
                         </div>
                         <h3>Smart Reminders</h3>
-                        <p>With Smart Reminders, you can configure alerts at any number of days before an item expires. This
-                            ensures your team has ample time to renegotiate terms and preparing a new contract.</p>
+                        <p>Get alerted 90, 30, 7 or any days before any cert expires. Never get blindsided again.</p>
                     </div>
 
                     <div className="feature-card">
@@ -32,7 +31,7 @@ export default function features() {
                             <img src="/img/2.webp" alt="Email Integration" className="feature-icon" />
                         </div>
                         <h3>Multiple Reminder Items</h3>
-                        <p>Set a multiple reminder items for each employee. From work contracts, training certificates, licenses, and more.</p>
+                        <p>Track contracts, training certs, licenses, work permits and else in one place per employee.</p>
                     </div>
 
                     <div className="feature-card">
@@ -40,7 +39,7 @@ export default function features() {
                             <img src="/img/3.webp" alt="Team Access" className="feature-icon" />
                         </div>
                         <h3>Team Collaboration</h3>
-                        <p>Assign owners to specific assets and manage application access with multi-user access controls.</p>
+                        <p>Assign document ownership to a specific user. Accountability is built in, not bolted on.</p>
                     </div>
 
                     <div className="feature-card">
@@ -48,7 +47,7 @@ export default function features() {
                             <img src="/img/4.webp" alt="Asset Management" className="feature-icon" />
                         </div>
                         <h3>Credential Tracking</h3>
-                        <p>Keep track of all your employee credentials, training certificates, licenses, and more.</p>
+                        <p>Full audit trail of every certification, renewal, and its expiry date. Ready for inspection in minutes.</p>
                     </div>
 
                     <div className="feature-card">
@@ -56,8 +55,7 @@ export default function features() {
                             <img src="/img/5.webp" alt="Asset Management" className="feature-icon" />
                         </div>
                         <h3>Notification to Email</h3>
-                        <p>Vysera will send a notification to your email when the reminder is due based on the reminder period
-                            you set.</p>
+                        <p>Reminders go straight to your inbox, no need to install another app to check, no need to change habits.</p>
                     </div>
 
                     <div className="feature-card">
@@ -65,8 +63,7 @@ export default function features() {
                             <img src="/img/6.webp" alt="Asset Management" className="feature-icon" />
                         </div>
                         <h3>Multi-Receivers</h3>
-                        <p>Set a multiple receiver for each reminder item. You can set a multiple receiver for each reminder
-                            item.</p>
+                        <p>Alert the HR manager, the employee, and their supervisor. Everyone is in the loop.</p>
                     </div>
 
                 </div>

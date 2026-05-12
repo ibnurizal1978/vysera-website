@@ -6,8 +6,9 @@ export default function Footer() {
             <section className="cta-section">
                 <div className="container">
                     <div className="cta-box">
-                        <h2>Ready to optimize your renewal process?</h2>
-                        <p>Use Vysera to manage your renewals and avoid compliance issues.</p>
+                        <h2>Stop paying fines. Start tracking renewals.</h2>
+                        <p>Stop managing compliance in spreadsheets.
+                            Start your free trial, it only takes 5 minutes to set up.</p>
                         <a href="https://apps.getvysera.com/signup" className="btn btn-primary btn-lg">Get Started for Free</a>
                         <br /><small>No credit card required.</small>
                     </div>

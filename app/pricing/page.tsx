@@ -16,8 +16,8 @@ export default function Pricing() {
             <section className="pricing-page-header">
                 <div className="container">
                     <div className="badge">Pricing</div>
-                    <h1>Simple, transparent <span className="gradient-text">pricing</span></h1>
-                    <p className="hero-sub">Choose the plan that fits your needs. No hidden fees. Cancel anytime.</p>
+                    <h1>The cost of Vysera is nothing compared to the cost of <span className="gradient-text">missing one expiry</span></h1>
+                    <p className="hero-sub">The average OSHA fine for a compliance violation can be up to $15,625 per incident. The average cost of a failed audit: weeks of remediation + legal fees. Vysera costs $10.99 per user per month.</p>
                 </div>
             </section>
 
@@ -97,7 +97,7 @@ export default function Pricing() {
                     <div className="pricing-plan-card">
                         <div className="most-popular-badge">Most Popular</div>
                         <div className="plan-name">Built-in</div>
-                        <div className="plan-price">$2.99<span>/user/mo</span></div>
+                        <div className="plan-price">$10.99<span>/user/mo</span></div>
                         <p className="plan-description">Perfect for organizations who need to track employee credentials, training certificates, licenses, and more</p>
 
                         <ul className="plan-features">
@@ -159,7 +159,7 @@ export default function Pricing() {
                     {/* Pro Plan */}
                     <div className="pricing-plan-card pro-plan">
                         <div className="plan-name">Custom</div>
-                        <div className="plan-price">$Call</div>
+                        <div className="plan-price">Call</div>
                         <p className="plan-description">For custom requirements, with a dedicated server and a primary support.<br /><br /></p>
 
                         <ul className="plan-features">
